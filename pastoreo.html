@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nombrados</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Service app" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description" content="Esta aplicacion le provee algunas herramientas para el servicio.">
+  <meta property="og:title" content="Metrowest Service">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/">
+
+  <!-- Boxicons CDN Link Nav var pequwno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Guide" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <!-- required -->
+
+  <!-- sheets and nav mode CSS -->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+
+</head>
+<div class="fullbody">
+
+  <body>
+    <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+
+    <!-- .stellarnav -->
+    <div class="stellarnav">
+      <ul>
+        <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+        </li>
+        <li><a><i><img title="predicacion" class="img6 js-arrow"
+                src="public/assets/img/precursor4.webp"></i>Predicación<i class="fa fa-angle-down"></i></a>
+          <ul>
+            <li>
+              <a href="interes.html">
+                <i><img title="android" class="img6" src="public/assets/img/precursor1.webp">
+                </i>Interesados</a>
+            </li>
+            <li>
+              <a href="registros.html">
+                <i><img title="android" class="img6" src="public/assets/img/registros.webp"></i>
+                Registros
+              </a>
+            </li>
+            <li>
+              <a href="pastoreo.html">
+                <i><img title="android" class="img6" src="public/assets/img/contactos.webp"></i>
+                Pastoreo
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
+              class="fa fa-angle-down"></i></a>
+          <ul>
+            <li>
+              <a href="recursos.html">
+                <i><img title="explorer" class="img6" src="public/assets/img/explorer.webp"></i>
+                Instalación En Windows
+              </a>
+            </li>
+            <li>
+              <a href="recursos.html#android">
+                <i><img title="android" class="img6" src="public/assets/img/android.webp"></i>
+                Instalación En Androide
+              </a>
+            </li>
+            <li>
+              <a href="recursos.html#iphone">
+                <i><img title="apple" class="img6" src="public/assets/img/apple.webp"></i>
+                Instalación En iPhone
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="tareas.html"><i><img title="visita" class="img6" src="public/assets/img/tareas2.webp"></i>Tareas
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- .stellarnav -->
+
+    <!-- .stellarnav header-->
+    <div class="header">
+      <a href="#">Nombrados</a>
+      <h1>Trabajando Unidos Como Congregación</h1>
+      <img title="logolarge" src="public/assets/img/precursor.webp" class="imgLogo2" />
+      <h2> “Haz la obra de evangelizador, efectúa tu ministerio plenamente.” (2 TIM. 4:5).<br>
+      </h2>
+    </div>
+    <!-- .stellarnav header-->
+
+    <!-- body contents -->
+    <section class="container">
+      <h2 class="section-header" id="section-header">
+        <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>AYUDA PARA EL PASTOREO<i>
+          <img title="header2" class="img4" src="public/assets/img/header2.webp"></i>
+      </h2>
+      <form name="google-sheet">
+        <div class="buttons-area">
+          <button type="button" id="buscar" class="button1" onclick="read_value($('#srchID').val())">
+            <img title="lupa" class="img2" src="public/assets/img/lupa.webp">
+            <i><span class="button__text">Buscar tema</span></i>
+          </button>
+          <select type="text" name="srchID" id="srchID" placeholder="Tema">
+            <option>	Angustia y Ánimo	</option>
+            <option>	Chismes	</option>
+            <option>	Comportamiento incorrecto	</option>
+            <option>	Cuentas	</option>
+            <option>	Familia	</option>
+            <option>	Funeral	</option>
+            <option>	Jovenes	</option>
+            <option>	Enfermos 	</option>
+            <option>	Matrimonio	</option>
+            <option>	No ser tropiezo	</option>
+            <option>	Noviazgo	</option>
+            <option>	Oración	</option>
+            <option>	Alcohol	</option>
+            <option>	Referencias	</option>
+            <option>	Tribunal	</option>
+          </select>
+        </div>
+
+        <div id="loader"></div>
+        <p id="re"></p>
+        <div id="showData"></div>
+
+        <div class="louder-area">
+          <div></div>
+          <div id="loader"></div>
+          <p id="re"></p>
+        </div>
+
+        <div align="center">
+          <!-- Memanggil loader-->
+          <div id="showData"></div>
+          <div id="loader"></div>
+          <p id="re"></p>
+          <div id="showData">
+          </div>
+        </div>
+      </form>
+    </section>
+    <div id="mrphekeModal1" class="modal fade">
+      <form name="google-sheet">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="btn btn-primary" data-dismiss="modal"
+                style="font-size:10pt;font-weight: bold;color:white;background-color:#B22222;border:1px solid #000000;padding:2px;float: left;">CLOSE</button>
+              <iframe
+                src="https://docs.google.com/spreadsheets/d/1odtkimM892pObjG2vjkh5jyuycIaD-4ENsdvv9owXW0/edit#gid=0"
+                style="width: 100%;height: 450px;"></iframe>
+            </div>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <!-- Memanggil scripts-->
+    <script type="text/javascript"></script>
+    <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+
+    <!--contactos js-->
+    <script src="public/script.js"></script>
+    <script src="public/main.js"></script>
+    <script src="public/nombrados.js"></script>
+
+    <!-- required stellarnav-->
+    <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+    <script type="text/javascript" src="public/stellarnav.js"></script>
+    <script type="text/javascript">
+      jQuery(document).ready(function ($) {
+        jQuery('.stellarnav').stellarNav({
+          theme: 'dark',
+          breakpoint: 960,
+          position: 'right',
+        });
+      });
+    </script>
+    <!-- required stellarnav-->
+  </body>
+</div>
+
+</html>

@@ -14,12 +14,14 @@
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
 
   <!-- Facebook metadata -->
-  <meta property="og:image:height" content="268">
-  <meta property="og:image:width" content="512">
-  <meta property="og:description" content="Esta aplicacion le provee algunas herramientas para el servicio.">
-  <meta property="og:title" content="Mis Registros">
-  <meta property="og:image" content="https://github.com/Hdez41/Registros/blob/main/public/assets/icons3/og-image.jpg?raw=true">
-  <meta property="og:url" content="https://hdez41.github.io/Registros/">
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion le provee algunas herramientas para el servicio.">
+  <meta property="og:title" content="Metrowest Service">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/">
 
   <!-- Boxicons CDN Link Nav var pequwno-->
   <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
@@ -30,18 +32,16 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
 
   <!-- Imports an icon to represent the document. -->
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
-  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+  <link rel="apple-touch-icon" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/svg+xml" href="public/assets/icons/favicon.svg">
+  <link rel="icon" type="image/png" href="public/assets/icons/favicon.png">
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_16.ico" sizes="16x16" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="public/assets/icons/icon_48.ico" sizes="48x48" />
 
   <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
   <link rel="manifest" href="public/manifest.json" />
+
 
   <!-- light mode and dark mode CSS -->
   <link rel="stylesheet" media="(prefers-color-scheme:light)"
@@ -55,25 +55,17 @@
   <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
   <!-- required -->
 
-  <!--SW-->
-  <script>
-    if (navigator.serviceWorker) {
-      navigator.serviceWorker.register(
-        '/Nombrados/sw.js',
-        { scope: '/Nombrados/' }
-      )
-    }
-  </script>
+  <script type="module" href="/src/app-index.ts"></script>
 
   <!-- Top arow CDN Link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
   <!-- Top arow CDN Link -->
 
-
 </head>
 
 <body>
   <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
 
     <!-- .stellarnav -->
     <div class="stellarnav">
@@ -136,89 +128,105 @@
   <div class="header">
     <a href="#">Nombrados</a>
     <h1>Trabajando Unidos Como Congregación</h1>
-    <img title="logolarge" src="public/assets/img/precursor4.webp" class="imgLogo2" />
-    <h2>“Haz la obra de evangelizador, efectúa tu ministerio plenamente.” (2 TIM. 4:5).
-    </h2><br>
+    <img title="logolarge" src="public/assets/img/familia2.webp" class="imgLogo2" />
+    <h2> “Haz la obra de evangelizador, efectúa tu ministerio plenamente.” (2 TIM. 4:5).<br>
+    </h2>
   </div>
   <!-- .stellarnav header-->
 
   <!--body original-->
   <section class="container">
     <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>MI SERVICIO<i>
+      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>RECURSOS Y AYUDA<i>
         <img title="header2" class="img4" src="public/assets/img/header2.webp">
       </i>
     </h2>
-    <div class="containera">
-      <h3>“Haz la obra de evangelizador, efectúa tu ministerio plenamente.”<a
-          href="https://wol.jw.org/es/wol/b/r4/lp-s/nwtsty/55/4#v=55:4:5" target="_blank">(2 TIM. 4:5)</a>.
-      </h3>
-    </div>
-
+    <h3>INSTALACIDÓN PARA WINDOWS</h3>
     <div class="content1">
       <p>
-        Mis Registros no sustituye el sitio oficial de la Organización
-        Cristiana de los Testigos de Jehová, jw.org ni la aplicación JW Library.
-        Tampoco sustituye la aplicación NW JWS, que se utiliza para enviar los informes y publicar los anuncios,
-        eventos, programas de las reuniones de la congregación.
+        Este Web App le permite instalarlo en una computadora, con sistema operativo Windows,
+        como una aplicación. Para instalar la aplicación deberá abrir el enlace en un navegador
+        como Microsoft Edge o internet Explorer <i><img class="img5" title="explorer"
+            src="public/assets/img/explorer.webp"></i>
       </p>
-      <p>
-        Este sitio se ha preparado con la intención de facilitar a los hermanos de la congregación Metrowest Spanish
-        las siguientes herramientas:<br><br>
-      </p>
-      <div class="content3">
-        1. <a href="interes.html"><i><img title="tormenta1" class="img6" src="public/assets/img/precursor1.webp">
-          </i></a>
-        <p-5>
-          Registro de personas interesadas: le permite registrar personas que han mostrado interés, pero o no son
-          de nuestro territorio o no hablan español. Una vez registre a la persona debe confirmar que envió el
-          mensaje por WhatsApp. También se registra para que el secretario envie la información a la sucursal.
-        </p-5>
-      </div>
-
-      <div class="content3">
-          2. <a href="registros.html"><i><img title="territorio1" class="img6" src="public/assets/img/registros.webp">
-            </i></a>
-      <p-5>
-        Mis Registros: le permite llevar un registro personal de sus estudios y revisitas.
-        </p-5><br><br>
-      </div>
-
     </div>
-    <h2 class="section-header" id="section-header">
-      <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>CONDICIONES DE USO<i>
-        <img title="header2" class="img4" src="public/assets/img/header2.webp">
-      </i>
-    </h2>
-
-    <img title="condiciones" src="public/assets/img/condiciones.webp" class="imgLogo" />
-
     <div class="content1">
-      <h3>El uso de este Web App está regido por las presentes condiciones.</h3>
       <p>
-        Al usar este sitio, usted se compromete a cumplir todas estas condiciones establecidas en este
-        formato digital.<br>
-        <br> No debe utilizar este sitio si no está dispuesto a cumplir estas condiciones en su totalidad o
-        en parte.<br>
-        <br> El enlace e información contenida es para uso único y exclusivo de los miembros de la
-        congregación Metrowest.<br>
-        <br>La información contenida, incluyendo los números de contacto telefónico, no se debe postear en
-        las redes sociales ni adelantar a menos que tengan permiso del Cuerpo de Ancianos.
+        Luego desde la pagina donde está la aplicación diríjase a los 3 puntos en la parte superior
+        derecha
+      </p>
+      <i><img class="imgLogo2" title="recurso1" src="public/assets/img/recurso1.webp"></i>
+      <p>
+        A continuación diríjase a la opcion “App” y presione “instal this site as an app"
+      </p>
+      <i><img title="recurso2" class="imgLogo2" src="public/assets/img/recurso2.webp"></i>
+      <p>
+        Presione intall
+      </p>
+      <i><img title="recurso3" class="imgLogo2" src="public/assets/img/recurso3.webp"></i>
+      <p>
+        Seleccione su preferencia (se recomienda las que están marcadas en la foto para tener acceso
+        directo en su escritorio y en la barra de tareas al pie de la página
+      </p>
+      <i><img title="recurso4" class="imgLogo2" src="public/assets/img/recurso4.webp"></i>
+      <p>
+        Resultado si selecciona crear acceso en la barra de tareas (Pin to taskbar)
+      </p>
+      <i><img title="recurso5" class="imgLogo2" src="public/assets/img/recurso5.webp"></i><br />
+<P1 id="android"></P1>
+      <h3>INSTALACIDÓN PARA ANDROID</h3>
+      <p>
+        Este Web App le permite instalarlo en su dispositivo Android como un App en su Home Screen (escritorio o
+        pantalla principal).
+        Para instalar la aplicación vea el video.
       </p>
     </div>
+    <div class="imgLogo3">
+      <div class="video">
+        <video width="300" controls>
+          <source src="public/assets/video/video2.mp4" type="video/mp4" />
+          <source src="public/assets/video/video.ogg" type="video/ogg" />
+          Tu navegador no soporta videos en HTML5.
+        </video><br><br>
 
-    <div class="containera">
-      <h3>Cuerpo de ancianos, trabajando unidos por amor a Jehová para la congregación.</h3>
-      <img title="logo" src="public/assets/icons/logolarge.webp" class="imgLogo2" />
+        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/coY906cABsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+      </div>
+      <P1 id="iphone"></P1>
+    </div><br><br>
+    <h3>INSTALACIDÓN PARA iPhone o iPad</h3>
+    <div class="content1">
+      <p>
+        Este Web App le permite instalarlo en su iPhone como un App en su Home Screen (escritorio o pantalla
+        principal).
+        Para instalar la aplicación vea el video.
+      </p>
+    </div>
+    <div class="imgLogo3">
+      <div class="video">
+        <video width="300" controls>
+          <source src="public/assets/video/video.mp4" type="video/mp4" />
+          <source src="public/assets/video/video.ogg" type="video/ogg" />
+          Tu navegador no soporta videos en HTML5.
+        </video>
+
+        <!--<iframe width="560" height="315" src="https://www.youtube.com/embed/coY906cABsY" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+      </div>
+      <P1 id="territorios"></P1>
+    </div><br><br>
+    <div class="content1">
+      <h3>Cuerpo de Ancianos. Unidos por amor a Jehová, trabajando por la congregación.</h3><br><i><img
+          title="logolarge" class="imgLogo2" src="public/assets/icons/logolarge.webp" /></i>
     </div>
     <div class="formulario__parrafo">
       <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
     </div>
-
     <div class="button">
       <a href="#top"><i class="fas fa-arrow-up"></i></a>
     </div>
   </section>
+
+  <!-- Memanggil scripts-->
+  <script type="text/javascript"></script>
 
   <!-- required stellarnav-->
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -235,10 +243,6 @@
   <!-- required stellarnav-->
 
   <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
-
-  <!-- Memanggil scripts-->
-  <script type="text/javascript"></script>
-
 </body>
 
 </html>

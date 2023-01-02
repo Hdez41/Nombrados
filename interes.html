@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Nombrados</title>
+
+  <!-- This meta viewport ensures the webpage's dimensions change according to the device it's on. This is called Responsive Web Design.-->
+  <meta name="viewport" content="viewport-fit=cover, width=device-width, initial-scale=1.0" />
+  <meta name="description" content="This is a Service app" />
+
+  <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#04416c" />
+  <meta name="theme-color" media="(prefers-color-scheme: light)" content="#5a92b9" />
+
+  <!-- Facebook metadata -->
+  <meta property="og:image:width" content="279">
+  <meta property="og:image:height" content="279">
+  <meta property="og:description"
+    content="Esta aplicacion le provee algunas herramientas para el servicio.">
+  <meta property="og:title" content="Metrowest Service">
+  <meta property="og:image"
+    content="https://github.com/Metrowest/Service/blob/main/public/assets/icons/og-image.jpg?raw=true/og-image.jpg">
+  <meta property="og:url" content="https://metrowest.github.io/Service/">
+
+  <!-- Boxicons CDN Link Nav var pequwno-->
+  <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+  <!-- These meta tags are Apple-specific, and set the web application to run in full-screen mode with a black status bar. Learn more at https://developer.apple.com/library/archive/documentation/AppleApplications/Reference/SafariHTMLRef/Articles/MetaTags.html-->
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="Guide" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+  <!-- Imports an icon to represent the document. -->
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/180.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="public/assets/icons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="public/assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="public/assets/icons/favicon-16x16.png">
+  <link rel="mask-icon" href="public/assets/icons/safari-pinned-tab.svg" color="#5bbad5">
+
+  <meta name="msapplication-config" content="public/assets/icons/browserconfig.xml" />
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="msapplication-TileImage" content="public/assets/icons/mstile-144x144.png">
+  <meta name="theme-color" content="#ffffff">
+
+  <!-- Imports the manifest to represent the web application. A web app must have a manifest to be a PWA. -->
+  <link rel="manifest" href="public/manifest.json" />
+
+
+  <!-- light mode and dark mode CSS -->
+  <link rel="stylesheet" media="(prefers-color-scheme:light)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/light.css">
+  <link rel="stylesheet" media="(prefers-color-scheme:dark)"
+    href="https://cdn.jsdelivr.net/npm/@shoelace-style/shoelace@2.0.0-beta.73/dist/themes/dark.css"
+    onload="document.documentElement.classList.add('sl-theme-dark');">
+
+  <!-- required -->
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/stellarnav.css">
+  <link rel="stylesheet" type="text/css" media="all" href="src/styles/appstyle.css">
+  <!-- required -->
+
+  <!-- Top arow CDN Link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+  <!-- Top arow CDN Link -->
+
+</head>
+
+<body>
+  <!-- Our app-index web component. This component is defined in src/pages/app-index.ts-->
+  <app-index></app-index>
+
+    <!-- .stellarnav -->
+    <div class="stellarnav">
+      <ul>
+        <li><a href="index.html"><i><img title="casa1" class="img6" src="public/assets/img/casa1.webp"></i>Home</a>
+        </li>
+        <li><a><i><img title="predicacion" class="img6 js-arrow"
+                src="public/assets/img/precursor4.webp"></i>Predicación<i class="fa fa-angle-down"></i></a>
+          <ul>
+            <li>
+              <a href="interes.html">
+                <i><img title="android" class="img6" src="public/assets/img/precursor1.webp">
+                </i>Interesados</a>
+            </li>
+            <li>
+              <a href="registros.html">
+                <i><img title="android" class="img6" src="public/assets/img/registros.webp"></i>
+                Registros
+              </a>
+            </li>
+            <li>
+              <a href="pastoreo.html">
+                <i><img title="android" class="img6" src="public/assets/img/contactos.webp"></i>
+                Pastoreo
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a><i><img title="recursos" class="img6 js-arrow" src="public/assets/img/recurso.webp"></i>Recursos<i
+              class="fa fa-angle-down"></i></a>
+          <ul>
+            <li>
+              <a href="recursos.html">
+                <i><img title="explorer" class="img6" src="public/assets/img/explorer.webp"></i>
+                Instalación En Windows
+              </a>
+            </li>
+            <li>
+              <a href="recursos.html#android">
+                <i><img title="android" class="img6" src="public/assets/img/android.webp"></i>
+                Instalación En Androide
+              </a>
+            </li>
+            <li>
+              <a href="recursos.html#iphone">
+                <i><img title="apple" class="img6" src="public/assets/img/apple.webp"></i>
+                Instalación En iPhone
+              </a>
+            </li>
+          </ul>
+        </li>
+        <li><a href="tareas.html"><i><img title="visita" class="img6" src="public/assets/img/tareas2.webp"></i>Tareas
+          </a>
+        </li>
+      </ul>
+    </div>
+    <!-- .stellarnav -->
+
+  <!-- .stellarnav header-->
+  <div class="header">
+    <a href="#">Nombrados</a>
+    <h1>Trabajando Unidos Como Congregación</h1>
+    <img title="logolarge" src="public/assets/img/predicacion1.webp" class="imgLogo2" />
+    <h2> “Haz la obra de evangelizador, efectúa tu ministerio plenamente.” (2 TIM. 4:5).
+    </h2><br>
+  </div>
+  <!-- .stellarnav header-->
+
+  <!--body original-->
+  <section class="container">
+    <form method="post" autocomplete="off" name="google-sheet" action="" class="formulario">
+      <h2 class="section-header" id="section-header">
+        <i><img title="header1" class="img4" src="public/assets/img/header1.webp"></i>PERSONA QUE MOSTRÓ INTERÉS<i>
+          <img title="header2" class="img4" src="public/assets/img/header2.webp">
+        </i>
+      </h2>
+
+      <h3>Datos de la persona interesada
+      </h3>
+
+      <div class="content2">
+        <div class="inputs">
+          <input title="Nombre" type="text" name="Nombre" id="Nombre" required>
+          <label>Nombre y Apellido</label>
+        </div>
+      </div>
+      <label class="form-check-label" for="flexCheckDefault">Sexo</label>
+      <select input id="Sexo" name="Sexo" class="form-check-input" type="radius"
+        onchange="this.className=this.options[this.selectedIndex].className">
+        <option class="flechasAzul" selected="true">--Seleccione--</option>
+        <option class="flechasRoja" value="Hombre">Hombre</option>
+        <option class="flechasVerde" value="Mujer">Mujer</option>
+      </select>
+      <div class="content2">
+        <div class="mb-3"><br>
+          <label for="Direccion" class="form-label">Dirección</label>
+          <textarea class="form-control" name="Direccion" id="Direccion" rows="2"></textarea>
+        </div>
+
+        <div class="inputs">
+          <input title="Telefono" type="text" name="Telefono" id="Telefono" required>
+          <label>Teléfono</label>
+        </div>
+        <div class="inputs">
+          <input title="Idioma" type="text" name="Idioma" id="Idioma" required>
+          <label>Idioma</label>
+        </div><br>
+        <div class="inputs">
+          <input title="Correo" type="text" name="Correo electronico" id="Correo">
+          <label>Correo electrónico</label>
+        </div><br>
+        <div class="inputs">
+          <input title="Mejor" type="text" name="Mejor momento para contactar" id="Mejor">
+          <label>Mejor momento para contactar</label>
+        </div>
+        <div class="mb-3">
+          <label for="Observaciones" class="form-label">Observaciones</label>
+          <textarea class="form-control" name="Observaciones" id="Observaciones" rows="3"></textarea>
+        </div>
+        <div class="formulario__parrafo">
+          <br>
+          <h2>Datos del publicador</h2>
+        </div>
+        <div class="inputs">
+          <input title="Publicador" type="text" name="Publicador" id="Publicador" required>
+          <label>Nombre y apellido</label>
+        </div>
+        <div class="content1">
+          <h3>PAUTAS PARA LLENAR ESTE FORMULARIO</h3>
+          <p>
+            1. El publicador debe llenar el formulario completo y asegurarse de que todos los datos son
+            exactos y están escritos claramente.<br><br>
+            2. La dirección debe estar completa. Especifique si se trata de una avenida, un bulevar, una
+            calle, una carretera, etc. Incluya el número del apartamento si es necesario.<br><br>
+            3. Indique el idioma que mejor entiende la persona.<br><br>
+            4. En “Observaciones”, indique brevemente en que tema ha mostrado interés y que publicaciones,
+            si alguna, se le han dejado. Si desea alguna publicación en particular, mencione cual y en que
+            idioma la solicita.<br><br>
+            5. Envié de inmediato el formulario al secretario de la congregación presionando el botón rojo
+            y confirme los datos en WhatsApp (debe enviar el mensaje por WhatsApp).<br><br>
+            6. El secretario enviará el formulario a la congregación o el grupo que corresponda. Si no sabe
+            a qué congregación o grupo enviarlo o no tiene la dirección, remitirá la información a la
+            sucursal mediante jw.org.
+          </p>
+        </div>
+      </div>
+      <div id="respuesta"></div>
+      <div class="content2">
+        <button type="submit" id="submit" class="formulario__submit">Confirme en WhatsApp</button>
+      </div>
+      <div class="formulario__parrafo">
+        <h3>Gracias por aprovechar este medio digital de comunicación.</h3>
+      </div>
+      <div class="content2">
+        <h2 class="titulo">Cuerpo de Ancianos<br> <span class="typed"></span></h2>
+      </div>
+    </form>
+  </section>
+
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbwIYoZt2WmS7S5QaFU4ENU7x0HhE4aCLWRRXGVUFUV0NUOZKwsuuE-TCs_iQk5t279N6Q/exec'
+    const form = document.forms['google-sheet']
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form)
+      })
+        .then(response => alert("Confirme su solicitud en WhatsApp"))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+  <script src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- required stellarnav-->
+  <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+  <script type="text/javascript" src="public/stellarnav.js"></script>
+  <script type="text/javascript">
+    jQuery(document).ready(function ($) {
+      jQuery('.stellarnav').stellarNav({
+        theme: 'dark',
+        breakpoint: 960,
+        position: 'right',
+      });
+    });
+  </script>
+  <!-- required stellarnav-->
+
+  <script src="https://code.jquery.com/jquery-migrate-3.0.1.js"></script>
+
+  <script src="public/interes.js"></script>
+  <script type="text/javascript"></script>
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-36251023-1']);
+    _gaq.push(['_setDomainName', 'jqueryscript.net']);
+    _gaq.push(['_trackPageview']);
+
+    (function () {
+      var ga = document.createElement('script');
+      ga.type = 'text/javascript';
+      ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') +
+        '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+  <script>
+    $("a").click(function () {
+      $("nav").removeClass("w--open");
+    });
+    $("a").click(function () {
+      $("div").removeClass("w--open");
+    });
+  </script>
+</body>
+
+</html>
