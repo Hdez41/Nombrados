@@ -95,7 +95,7 @@
     "enctype": "multipart/form-data",
     "params": {
       "title": "Nombrados Unidos",
-      "text": "Esta aplicacion le presenta el plan de emergencias y algunas herramientas para el servicio.",
+      "text": "Esta aplicacion le presenta algunas herramientas para el cuidado de la congregacion.",
       "url": "https://metrowest.github.io/Nombrados/",
       "files": [
         {

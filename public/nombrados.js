@@ -8,14 +8,9 @@ function insert_value() {
     var id1= $("#id").val();
     var biblia= $("#biblia").val();
     var cita= $("#cita").val();
-    var referencia= $("#referencia").val();
-    var direccion= $("#direccion").val();
-    var territorio= $("#territorio").val();
-    var categoria= $("#categoria").val();
-    var tema= $("#tema").val();
-    var observaciones= $("#observaciones").val();//////////////////
+    var referencia= $("#referencia").val()//////////////////
 
-    var url = script_url+"?callback=ctrlq&observaciones="+observaciones+"&tema="+tema+"&categoria="+categoria+"&territorio="+territorio+"&direccion="+direccion+"&referencia="+referencia+"&cita="+cita+"&biblia="+biblia+"&id="+id1+"&action=insert";
+    var url = script_url+"?callback=ctrlq&referencia="+referencia+"&cita="+cita+"&biblia="+biblia+"&id="+id1+"&action=insert";
 
        var request = jQuery.ajax({
          crossDomain: true,
@@ -33,14 +28,9 @@ function insert_value() {
     var id1= $("#id").val();
     var biblia= $("#biblia").val();
     var cita= $("#cita").val();
-    var referencia= $("#referencia").val();
-    var direccion= $("#direccion").val();
-    var territorio= $("#territorio").val();
-    var categoria= $("#categoria").val();
-    var tema= $("#tema").val();
-    var observaciones= $("#observaciones").val();//////////////////
+    var referencia= $("#referencia").val();//////////////////
 
-    var url = script_url+"?callback=ctrlq&observaciones="+observaciones+"&tema="+tema+"&categoria="+categoria+"&territorio="+territorio+"&direccion="+direccion+"&referencia="+referencia+"&cita="+cita+"&biblia="+biblia+"&id="+id1+"&action=update";
+    var url = script_url+"?callback=ctrlq&referencia="+referencia+"&cita="+cita+"&biblia="+biblia+"&id="+id1+"&action=insert";
 
        var request = jQuery.ajax({
          crossDomain: true,
@@ -59,14 +49,9 @@ function insert_value() {
     var id1= $("#id").val();
     var biblia= $("#biblia").val();
     var cita= $("#cita").val();
-    var referencia= $("#referencia").val();
-    var direccion= $("#direccion").val();
-    var territorio= $("#territorio").val();
-    var categoria= $("#categoria").val();
-    var tema= $("#tema").val();
-    var observaciones= $("#observaciones").val();//////////////////
+    var referencia= $("#referencia").val();//////////////////
 
-    var url = script_url+"?callback=ctrlq&observaciones="+observaciones+"&tema="+tema+"&categoria="+categoria+"&territorio="+territorio+"&direccion="+direccion+"&referencia="+referencia+"&cita="+cita+"&biblia="+biblia+"&id="+id1+"&action=delete";
+    var url = script_url+"?callback=ctrlq&referencia="+referencia+"&cita="+cita+"&biblia="+biblia+"&id="+id1+"&action=insert";
 
        var request = jQuery.ajax({
          crossDomain: true,
@@ -100,23 +85,13 @@ function insert_value() {
      var cell1 = row.insertCell(0);
      var cell2 = row.insertCell(1);
      var cell3 = row.insertCell(2);
-     var cell4 = row.insertCell(3);
-     var cell5 = row.insertCell(4);
-     var cell6 = row.insertCell(5);
-     var cell7 = row.insertCell(6);
-     var cell8 = row.insertCell(7);
-     var cell9 = row.insertCell(8);///////////////////
+     var cell4 = row.insertCell(3);///////////////////
      row.style.background = "#000000";
 
      cell1.innerHTML = "<b>ID</b>";
      cell2.innerHTML = "<b>Biblia</b>";
      cell3.innerHTML = "<b>Cita</b>";
-     cell4.innerHTML = "<b>Referencia</b>";
-     cell5.innerHTML = "<b>Dirección</b>";
-     cell6.innerHTML = "<b>Territorio</b>";
-     cell7.innerHTML = "<b>Categoria</b>";
-     cell8.innerHTML = "<b>Tema</b>";
-     cell9.innerHTML = "<b>Observaciones</b>";//////////////////
+     cell4.innerHTML = "<b>Referencia</b>";;//////////////////
 
    //        alert(json.records);
         // masukkan data ke dalam tabel
@@ -132,20 +107,10 @@ function insert_value() {
        tabCell = tr.insertCell(-1);
        tabCell.innerHTML = json.records[i].Cita;
        tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Referencia;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Dirección;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Territorio;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Categoria;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Tema;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Observaciones;////////////////
+       tabCell.innerHTML = json.records[i].Referencia;////////////////
                }
            }
-            $("#re").html("Datos de la Persona");
+            $("#re").html("Citas Bíblicas");
            $("#re").css("visibility","visible");
          } else {
             for (var i = 0; i < json.records.length; i++) {
@@ -158,17 +123,7 @@ function insert_value() {
        tabCell = tr.insertCell(-1);
        tabCell.innerHTML = json.records[i].Cita;
        tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Referencia;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Dirección;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Territorio;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Categoria;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Tema;
-       tabCell = tr.insertCell(-1);
-       tabCell.innerHTML = json.records[i].Observaciones;////////////////
+       tabCell.innerHTML = json.records[i].Referencia;////////////////
              }
           }
 
@@ -181,13 +136,7 @@ function insert_value() {
         $("#id").val("")
         $("#biblia").val("")
         $("#cita").val("")
-        $("#referencia").val("")
-        $("#direccion").val("")
-        $("#territorio").val("")
-        $("#categoria").val("")
-        $("#tema").val("")
-        $("#observaciones").val("")
-         getData2Input();///////////////////
+        $("#referencia").val("");///////////////////
        });
     }
    //////////// Ketika data dalam tabel diklik
@@ -209,21 +158,11 @@ function insert_value() {
      var id = tableRow.childNodes[0].innerHTML;
      var biblia = tableRow.childNodes[1].innerHTML;
      var cita = tableRow.childNodes[2].innerHTML;
-     var referencia = tableRow.childNodes[3].innerHTML;
-     var direccion = tableRow.childNodes[4].innerHTML;
-     var territorio = tableRow.childNodes[5].innerHTML;
-     var categoria = tableRow.childNodes[6].innerHTML;
-     var tema = tableRow.childNodes[7].innerHTML;
-     var observaciones = tableRow.childNodes[8].innerHTML;//////////
+     var referencia = tableRow.childNodes[3].innerHTML;//////////
      $("#id").val(id)
      $("#biblia").val(biblia)
      $("#cita").val(cita)
      $("#referencia").val(referencia)
-     $("#direccion").val(direccion)
-     $("#territorio").val(territorio)
-     $("#categoria").val(categoria)
-     $("#tema").val(tema)
-     $("#observaciones").val(observaciones)
    }
 
 
@@ -233,7 +172,7 @@ _gaq.push(['_setDomainName', 'jqueryscript.net']);
 _gaq.push(['_trackPageview']);
 
 var script_url =
-    "https://script.google.com/macros/s/AKfycby3gwP-KClZ3zmpAkSwRklg5MSZrhwxOy1OTr8fE3ffEwWeUbS1r0FxKxW_CaRgXV-5fg/exec"; /////////////////
+    "https://script.google.com/macros/s/AKfycbxPgpFxWSZCfza9sBLhUTMw2pkbmcAMhIdiP6UC5ykXkxyvPagpAd4XrYMNtHJU2Ol5EQ/exec"; /////////////////
 
 (function () {
     var ga = document.createElement('script');
